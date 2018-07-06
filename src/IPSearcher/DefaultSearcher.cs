@@ -17,6 +17,8 @@ namespace IPSearcher
 
         public IpLocation Search(uint address)
         {
+            //TODO Parse ipv4 goto search
+
             throw new NotImplementedException();
         }
     }
