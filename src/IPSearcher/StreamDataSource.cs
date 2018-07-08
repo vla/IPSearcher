@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
@@ -8,7 +7,7 @@ namespace IPSearcher
     /// <summary>
     /// Data source based on IO stream
     /// </summary>
-    /// <seealso cref="TrimData.IP.IDataSource" />
+    /// <seealso cref="IDataSource" />
     public class StreamDataSource : IDataSource
     {
         private readonly Stream DataSource;
