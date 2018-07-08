@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace IPSearcher
@@ -7,7 +7,7 @@ namespace IPSearcher
     /// <summary>
     /// Memory-based data sources
     /// </summary>
-    /// <seealso cref="TrimData.IP.IDataSource" />
+    /// <seealso cref="IDataSource" />
     public class MemoryDataSource : IDataSource
     {
         private readonly byte[] DataSource;
