@@ -46,9 +46,9 @@ namespace IPSearcher
         /// </returns>
         public static bool IsReserved(uint address)
         {
-            for (int i = 0; i < ReserveIP.Rank; i++)
+            for (int i = 0; i < ReserveIP.GetLength(0); i++)
             {
-                if (ReserveIP[i, 0] >= address && address <= ReserveIP[i, 1])
+                if (address >= ReserveIP[i, 0] && address <= ReserveIP[i, 1])
                 {
                     return true;
                 }
