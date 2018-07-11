@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IPSearcher\IPSearcher.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\data\ip.dat">
+      <Link>%(FileName)%(Extension)</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+
+
+
+</Project>

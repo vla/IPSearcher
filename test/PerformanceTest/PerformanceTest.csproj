@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\IPSearcher.Data\IPSearcher.Data.csproj" />
     <ProjectReference Include="..\..\src\IPSearcher\IPSearcher.csproj" />
   </ItemGroup>
 

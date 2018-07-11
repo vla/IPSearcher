@@ -18,7 +18,7 @@ namespace IPSearcher
         }
 
         /// <summary>
-        /// 获取号码归属地查询器
+        /// 获取IP搜索器
         /// </summary>
         /// <param name="dataSource"><see cref="IDataSource"/></param>
         /// <returns><see cref="IIpSearcher"/></returns>
