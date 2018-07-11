@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
 
 namespace IPSearcher
 {
     /// <summary>
     /// IpLocationHelper
     /// </summary>
-    public class IpLocationHelper
+    public static class IpLocationHelper
     {
         //0            -   16777215     0.0.0.0        -    0.255.255.255
         //167772160    -   184549375    10.0.0.0       -    10.255.255.255
@@ -54,6 +55,29 @@ namespace IPSearcher
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// IP位置查询
+        /// </summary>
+        /// <param name="searcher"><see cref="IIpSearcher"/></param>
+        /// <param name="address">ipv4地址</param>
+        /// <returns>
+        /// IP位置信息
+        /// </returns>
+        public static IpLocation Search(this IIpSearcher searcher, string address)
+        {
+            if (IPAddress.TryParse(address, out IPAddress ip))
+            {
+                var octets = ip.GetAddressBytes();
+
+                if (octets.Length == 4)
+                {
+                    return searcher.Search(IPv4ToInteger(ip.GetAddressBytes()));
+                }
+            }
+
+            return null;
         }
 
         /// <summary>
