@@ -1,0 +1,23 @@
+<Project>
+  <Import Project="version.props" />
+
+  <PropertyGroup>
+    <Description>Discover your visitors’ geolocation information</Description>
+    <Product>Ip Location</Product>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/vla/IPSearcher</RepositoryUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)sign.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
+
+    <Authors>v.la@live.cn</Authors>
+    <PackageTags>IPSearcher;IP2Region;IpLocation;Ip2Location</PackageTags>
+    <PackageIconUrl>http://s.gravatar.com/avatar/28dfa5190889f7190e74b683fc30b827?s=80</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/vla/IPSearcher</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/vla/IPSearcher/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+</Project>
