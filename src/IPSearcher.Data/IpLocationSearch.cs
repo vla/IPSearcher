@@ -37,7 +37,9 @@ namespace IPSearcher
         /// <summary>
         /// 获取IP搜索器
         /// </summary>
-        /// <returns><see cref="ISearcher"/></returns>
+        /// <returns>
+        ///   <see cref="IIpSearcher" />
+        /// </returns>
         public static IIpSearcher GetSearcher()
         {
             return IpSearcherFactory.GetSearcher(GetInnerDataSource());
