@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.IO;
 using System.Linq;
 using IPSearcher;
@@ -26,7 +26,7 @@ namespace IPSearcherTest
             var result = searcher.Search(IpLocationHelper.IPv4ToInteger("14.123.238.167"));
 
             Assert.NotNull(result);
-            Assert.Equal("¹ã¶«Ê¡", result.Province);
+            Assert.Equal("å¹¿ä¸œçœ", result.Province);
 
             dataSource.Dispose();
         }
@@ -57,9 +57,9 @@ namespace IPSearcherTest
                 Assert.Equal(info.Province, result.Province ?? string.Empty);
                 Assert.Equal(info.City, result.City ?? string.Empty);
 
-                if (info.Isp == "ÄÚÍøIP")
+                if (info.Isp == "å†…ç½‘IP")
                 {
-                    Assert.Equal("±£ÁôµØÖ·", result.Isp ?? string.Empty);
+                    Assert.Equal("ä¿ç•™åœ°å€", result.Isp ?? string.Empty);
                 }
                 else
                 {
