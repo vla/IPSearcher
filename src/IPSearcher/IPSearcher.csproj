@@ -6,7 +6,7 @@
     <AssemblyName>IPSearcher</AssemblyName>
     <AssemblyTitle>IPSearcher</AssemblyTitle>
     <PackageId>IPSearcher</PackageId>
-    <TargetFrameworks>netstandard2.0;net40;</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net462;</TargetFrameworks>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
